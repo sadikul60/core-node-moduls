@@ -6,6 +6,8 @@ const {name, product} = require("./other");
 // node.js diye Server create.
 const http = require("http"); // http.createServer
 const url = require("url"); // url
+const fs = require("fs"); // fillSystem
+
 
 const PORT = 5000;
 
@@ -46,7 +48,7 @@ const data = [
 //     console.log(queryObj);
 // });
 
-const fs = require("fs");
+
 
 const server = http.createServer((req, res) => {
     if(req.url = "/"){
@@ -76,7 +78,8 @@ const server = http.createServer((req, res) => {
             }
         })
     }   
-})
+});
+
 
 
 server.listen(PORT);
